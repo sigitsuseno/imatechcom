@@ -1,5 +1,4 @@
 <template>
-  <web-navigation />
   <main>
     <slot></slot>
   </main>

@@ -1,8 +1,5 @@
 <template>
-  <web-navigation />
-  <main>
-    <slot></slot>
-  </main>
+  <div>Profile</div>
 </template>
 
 <script lang="ts" setup></script>

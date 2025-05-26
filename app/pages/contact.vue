@@ -1,8 +1,5 @@
 <template>
-  <web-navigation />
-  <main>
-    <slot></slot>
-  </main>
+  <div>Contact</div>
 </template>
 
 <script lang="ts" setup></script>

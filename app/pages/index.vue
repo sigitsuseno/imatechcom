@@ -1,4 +1,8 @@
-<script setup></script>
+<script setup>
+import LayananSlider from "~/components/homepages/LayananSlider.vue";
+</script>
 <template>
-  <div>Ini halaman "/"</div>
+  <HomepagesHeroSlider />
+  <HomepagesLayananSlider />
+  <div class="w-full h-screen">Test</div>
 </template>
