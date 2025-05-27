@@ -1,5 +1,5 @@
 <template>
-  <section class="w-full bg-red-200">
+  <section class="w-full bg-white text-blue-950">
     <div>
       <h2 class="text-4xl text-center font-bold py-6">Layanan Kami</h2>
     </div>
@@ -79,7 +79,7 @@ const modules = [Navigation, Pagination, Autoplay];
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: rgba(255, 255, 255, 0.7);
+  background-color: rgba(214, 208, 208, 0.7);
   border-radius: 8px;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }

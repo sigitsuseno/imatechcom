@@ -3,8 +3,12 @@
   <main>
     <slot></slot>
   </main>
+  <footer-page />
 </template>
 
-<script lang="ts" setup></script>
+<script setup>
+import WebNavigation from "~/components/WebNavigation.vue";
+import FooterPage from "~/components/FooterPage.vue";
+</script>
 
 <style></style>

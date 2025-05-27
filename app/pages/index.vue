@@ -1,6 +1,4 @@
-<script setup>
-import LayananSlider from "~/components/homepages/LayananSlider.vue";
-</script>
+<script setup></script>
 <template>
   <HomepagesHeroSlider />
   <HomepagesLayananSlider />

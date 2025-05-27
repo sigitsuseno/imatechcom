@@ -37,11 +37,12 @@
     <div
       class="absolute bottom-0 left-0 right-0 z-10 p-4 flex justify-end items-end w-full"
     >
-      <div class="flex items-center space-x-4">
+      <div class="flex items-center flex-row-reverse space-x-4">
         <swiper
           @swiper="setThumbsSwiper"
           :modules="[FreeMode, Thumbs, Navigation]"
           :slidesPerView="'auto'"
+          :loop="true"
           :spaceBetween="10"
           :freeMode="true"
           :watchSlidesProgress="true"
@@ -60,7 +61,7 @@
           </swiper-slide>
         </swiper>
 
-        <div class="flex space-x-2">
+        <div class="flex gap-4">
           <button
             class="swiper-button-prev-custom bg-white p-3 rounded-full shadow-md text-gray-700 hover:bg-gray-200"
           >

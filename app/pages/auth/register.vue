@@ -12,17 +12,26 @@
       <div
         class="w-full bg-slate-200 text-center px-4 py-2 rounded-lg ring ring-blue-100"
       >
-        <p class="text-xl">Login</p>
+        <p class="text-xl">Daftar Akun</p>
         <p class="text-xs">
-          Jika belum punya akun daftar
+          Jika sudah punya akun masuk
           <NuxtLink
-            to="/auth/register"
+            to="/auth/login"
             class="font-bold tracking-wider text-blue-600 hover:underline"
             >disini</NuxtLink
           >
         </p>
       </div>
       <form>
+        <div class="mb-3">
+          <label for="name" class="text-sm">Name</label>
+          <input
+            id="name"
+            name="nama"
+            type="text"
+            class="w-full focus:outline-blue-400 focus:bg-blue-50 outline outline-1 outline-slate-300 px-4 py-2 rounded-md"
+          />
+        </div>
         <div class="mb-3">
           <label for="email" class="text-sm">Email</label>
           <input
@@ -32,7 +41,7 @@
             class="w-full focus:outline-blue-400 focus:bg-blue-50 outline outline-1 outline-slate-300 px-4 py-2 rounded-md"
           />
         </div>
-        <div class="mb-1">
+        <div class="mb-3">
           <label for="password" class="text-sm">Password</label>
           <div class="grid grid-cols-[1fr_48px]">
             <input
@@ -49,36 +58,32 @@
             </button>
           </div>
         </div>
-        <div class="mb-3">
-          <label class="flex gap-2 items-center">
-            <input type="checkbox" />
-            <span class="text-xs">Remember me</span>
-          </label>
-        </div>
-        <div>
-          <button
-            type="submit"
-            class="w-full px-4 h-12 rounded-lg outline outline-1 font-semibold tracking-wider outline-blue-500 hover:bg-blue-300 transition duration-200-md shadow"
+        <div class="mb-4">
+          <label for="password_confirmation" class="text-sm"
+            >Confirm Password</label
           >
-            Submit
-          </button>
+          <div class="grid grid-cols-[1fr_48px]">
+            <input
+              id="password_confirmation"
+              name="password_confirmation"
+              type="password"
+              class="w-full focus:outline-blue-400 focus:bg-blue-50 outline outline-1 outline-slate-300 px-4 py-2 rounded-md"
+            />
+            <button
+              class="bg-blue-500 flex items-center justify-center rounded-r-md outline outline-1 outline-blue-500 text-white"
+            >
+              <Icon name="wpf:invisible" class="text-xl hidden" />
+              <Icon name="ant-design:eye-invisible-outlined" class="text-xl" />
+            </button>
+          </div>
         </div>
-      </form>
-      <div>
-        <p
-          class="w-full text-center relative before:absolute before:content-[''] before:h-[2px] before:w-full before:bg-slate-300 before:top-3 before:left-0"
-        >
-          <span class="relative bg-slate-50 px-3">Atau</span>
-        </p>
-      </div>
-      <div>
         <button
-          class="w-full flex items-center justify-center h-12 rounded-lg shadow-md outline outline-1 outline-blue-500 hover:bg-blue-300 transition duration-200"
+          type="submit"
+          class="w-full px-4 h-12 rounded-lg outline outline-1 font-semibold tracking-wider outline-blue-500 hover:bg-blue-300 transition duration-200-md shadow"
         >
-          <Icon name="flat-color-icons:google" class="text-4xl" />
-          <span>Login with google</span>
+          Submit
         </button>
-      </div>
+      </form>
     </div>
   </section>
 </template>
